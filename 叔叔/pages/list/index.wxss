@@ -1,0 +1,35 @@
+/* pages/list/index.wxss */
+.center-wrap{
+    overflow: hidden;
+}
+
+.center-wrap .center-list{
+    padding-top: 60rpx;
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    padding-bottom: 70rpx;
+    border-bottom: 2rpx solid #d1d1d1;
+    box-sizing: border-box;
+}
+
+.center-wrap .center-list:active{
+    background-color: #F5F5F5;
+}
+
+.center-wrap .center-list:nth-child(2n){
+    border-left: 1rpx solid #d1d1d1;
+}
+
+.center-wrap .center-list image{
+    display: block;
+    margin: 0 auto;
+    width: 200rpx;
+    height: 150rpx;
+    margin-bottom: 80rpx;
+}
+
+.center-wrap .center-list view{
+    text-align: center;
+    font-size: 24rpx;
+}

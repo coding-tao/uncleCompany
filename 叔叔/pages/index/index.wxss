@@ -1,0 +1,212 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.container{
+    width:100%;
+    padding-bottom: 30rpx;
+}
+
+.map-nav{
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  width: 200rpx;
+  text-align: right;
+  padding-right: 40rpx;
+  color: #666;
+}
+
+.map-nav:after{
+  content: '';
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2rpx solid #666;
+  border-right: 2rpx solid #666;
+  transform: rotate(45deg);
+  -ms-transform:rotate(45deg); 	/* IE 9 */
+-moz-transform:rotate(45deg); 	/* Firefox */
+-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+-o-transform:rotate(45deg); 
+  right:20rpx;
+  top: 40rpx;
+}
+
+.header{
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: #3bb8ca;
+    font-size: 30rpx;
+    color: #fff;
+}
+
+.header image{
+    width: 200rpx;
+    height: 100rpx;
+}
+
+.header-nav{
+  position: relative;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 30rpx;
+    font-size: 28rpx;
+    background-color:#fff;
+    box-shadow:0 0 1px rgba(0,0,0,0.25) inset;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+swiper {
+  height: 360rpx;
+  width: 100%;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.content-list{
+    display: -webkit-box;
+    display: box;
+    display: -moz-box;
+    /* 老版本 - 适配iOS 6-, Safari 3.1-6 */
+    display: -webkit-flex;
+    /* 新版本 - 适配Chrome */
+    display: flex;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-justify-content: center;
+    -moz-align-justify-content: center;
+    -webkit-align-justify-content: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.item-list{
+    flex: 1;
+    font-size: 20rpx;
+    text-align: center;
+    padding-bottom: 40rpx;
+}   
+
+.item-list:active{
+    background-color: #eee;
+}
+
+.item-list .eng{
+    font-size: 30rpx;
+    margin-bottom: 10rpx;
+}
+
+.list{
+    margin: 50rpx auto 0 ;
+    display: -webkit-box;
+    display: box;
+    display: -moz-box;
+    /* 老版本 - 适配iOS 6-, Safari 3.1-6 */
+    display: -webkit-flex;
+    /* 新版本 - 适配Chrome */
+    display: flex;
+    -webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-justify-content: center;
+    -moz-align-justify-content: center;
+    -webkit-align-justify-content: center;
+    justify-content: center;
+    background-color: #F5856F;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 130rpx;
+    height: 130rpx;
+    margin-bottom: 20rpx;
+}
+
+.list.about{
+    background-color: #58B8DE;
+}
+
+.list.concat{
+    background-color: #A48CE1;
+}
+
+.item-list image{
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.header-nav.center{
+    background-color: #42D0DE;
+    color: #fff;
+}
+
+.center-wrap{
+    overflow: hidden;
+}
+
+.center-wrap .center-list{
+    padding-top: 60rpx;
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    padding-bottom: 70rpx;
+    border-bottom: 2rpx solid #d1d1d1;
+    box-sizing: border-box;
+}
+
+.center-wrap .center-list:active{
+    background-color: #F5F5F5;
+}
+
+.center-wrap .center-list:nth-child(2n){
+    border-left: 1rpx solid #d1d1d1;
+}
+
+.center-wrap .center-list image{
+    display: block;
+    margin: 0 auto;
+    width: 200rpx;
+    height: 150rpx;
+    margin-bottom: 80rpx;
+}
+
+.center-wrap .center-list view{
+    text-align: center;
+    font-size: 24rpx;
+}
+
+.about-wrap{
+  background-color: #fff;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.about-wrap .info{
+  margin: 40rpx 40rpx;
+  line-height: 40rpx;
+}
+
+.tel{
+  width: 360rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin:30rpx auto;
+  font-size: 24rpx;
+  background-color: #42D0DE;
+  color: #fff;
+  border-radius: 12rpx;
+}
+
+.tel.tel1{
+    background-color: #F5856F;
+}

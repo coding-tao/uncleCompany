@@ -1,0 +1,25 @@
+<map id="map" longitude="113.879331538354" latitude="22.564033756616" scale="28" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location style="width: 100%; height: 400rpx;"></map>
+<view class='concat-item'>
+    <view class='concat-list'>
+        <view class='name'>地址:</view>
+        <view class='content'><text selectable>深圳市宝安新中心区华美居商务中心大厦A区</text></view>
+    </view>
+    <view class='concat-list'>
+        <view class='name'>官网:</view>
+        <view class='content'><text selectable>HTTP://WWW.KOD-LCD.COM.CN</text></view>
+    </view>
+    <view class='concat-list'>
+        <view class='name'>座机:</view>
+        <view class='content'><text selectable>0755-26404363</text></view>
+    </view>
+    <view class='concat-list'>
+        <view class='name'>E-mail:</view>
+        <view class='content'><text selectable>jykld@126.com (业务)</text></view>
+    </view>
+    <view class='concat-list'>
+        <view class='name'>采购部:</view>
+        <view class='content'>代小姐  王小姐（分机615）</view>
+    </view>   
+    <view class='tel' bindtap='tel'>联系电话:0755-26404363</view>
+    <view class='tel tel1' bindtap='tel1'>联系电话:138-2434-1095</view>
+</view>

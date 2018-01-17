@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="container">
+     <view class='header'>康晶达光电技术有限公司</view> 
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class='header-nav'>快速导航 <view class='map-nav' bindtap='openMap'>查看地图</view></view>
+    <view class='content-list'>
+        <view class='item-list' bindtap='linkToAbout'>
+            <view class='list'>
+                <image src='../../images/company.png'></image>
+            </view>
+            <view class='eng'>About</view>
+            关于我们
+        </view>
+        <view class='item-list' bindtap='linkToList'>
+            <view class='list about'>
+                <image src='../../images/product.png'></image>
+            </view>
+            <view class='eng'>Product</view>
+            产品中心
+        </view>
+        <view class='item-list' bindtap='linkToConcat'>
+            <view class='list concat'>
+                <image src='../../images/concat.png'></image>
+            </view>
+            <view class='eng'>Concat</view>
+            联系我们
+        </view>
+    </view>
+    <view class='header-nav center'>产品中心</view>
+    <view class='center-wrap'>
+        <view class='center-list'>
+            <image src='../../images/demo1.png'></image>
+            <view>8.4寸 液晶显示屏</view>
+        </view>
+        <view class='center-list'>
+            <image src='../../images/demo1.jpg'></image>
+            <view>8.4寸 液晶显示屏</view>
+        </view>
+        <view class='center-list'>
+            <image src='../../images/demo1.png'></image>
+            <view>8.4寸 液晶显示屏</view>
+        </view>
+        <view class='center-list'>
+            <image src='../../images/demo1.png'></image>
+            <view>8.4寸 液晶显示屏</view>
+        </view>
+        <view class='center-list'>
+            <image src='../../images/demo1.png'></image>
+            <view>8.4寸 液晶显示屏</view>
+        </view>
+        <view class='center-list'>
+            <image src='../../images/demo1.png'></image>
+            <view>8.4寸 液晶显示屏</view>
+        </view>        
+    </view>
+    <view class='header-nav center'>关于我们</view>
+    <view class='about-wrap'>
+      <view class='info'>深圳市康晶达光电技术有限公司是康龙达国际集团(香港)有限公司大陆区的分支公司，是集研发、生产、制造、销售于一体的串口人机界面、10.4-22寸开放式触摸工业显示器及超低功耗、超高亮度、更广温度（-45℃-85℃）液晶屏供应商。公司于2005年成立以来始终坚持以市场需求为导向，致力研发高质量一流的产品，为用户提供多种选择的人机界面产品、解决方案和服务。成功源于专注，从过去到现在我们不断深入全国各个行业领域，用心了解用户的需求，仔细聆听用户的意见，研发出符合市场需求的产品。公司还专业代理台湾晶采光电、台湾奇美(CMO-INNOLUX)和天马液晶显示屏，现已广泛应用于工业、医疗、交通、监视器、广告机、数码相框、工控、军工、医疗、机械、投影仪、智能仪表、金融、电力、通讯、医疗器械、仪器仪表、工业现场控制监控设备、数字控制设备及手机等领域，用户遍及祖国的大江南北，培育一批又一批的高素质用户，提升了用户的产品档次，解决了用户遇到的不同难题，与用户一起不断发展、壮大。</view>
+    </view>
+    <view class='tel' bindtap='tel'>联系电话:0755-26404363</view>
+    <view class='tel tel1' bindtap='tel1'>联系电话:138-2434-1095</view>
+</view>
