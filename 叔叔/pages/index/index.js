@@ -1,5 +1,5 @@
 //index.js
-//获取应用实例
+const AV = require('../../utils/av-weapp-min.js');
 Page({
     data: {
         imgUrls: [
@@ -11,6 +11,16 @@ Page({
         autoplay: true,
         interval: 5000,
         duration: 1000
+    },
+    onShow () {
+      new AV.Query('Todo')
+        .descending('createdAt')
+        .find()
+        .then(todos =>{
+          console.log(todos)
+          this.setData({ todos })
+        })
+        .catch(console.error);
     },
     tel(){
         wx.makePhoneCall({
