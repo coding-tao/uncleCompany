@@ -9,18 +9,52 @@ Page({
         ],
         indicatorDots: true,
         autoplay: true,
-        interval: 5000,
-        duration: 1000
+        interval: 3000,
+        duration: 1000,
+        listArr:[],
+        swiperArr:[]
     },
     onShow () {
       new AV.Query('Todo')
         .descending('createdAt')
         .find()
         .then(todos =>{
-          console.log(todos)
-          this.setData({ todos })
+          let arr = [];
+          // this.setData({ listArr: todos })
+          todos.forEach((item)=>{
+            arr.push({
+              img: item.attributes.img.attributes.url,
+              content: item.attributes.content
+            })
+          })
+          this.setData({
+            listArr:arr
+          })
         })
         .catch(console.error);
+    },
+    onReady() {
+      console.log(1)
+      new AV.Query('TestObject')
+        .descending('createdAt')
+        .find()
+        .then(todos => {
+          console.log(11)
+          console.log(todos)
+          let arr = [];
+          // this.setData({ listArr: todos })
+          todos.forEach((item) => {
+            arr.unshift({
+              img: item.attributes.img.attributes.url
+            })
+          })
+          console.log(arr,'ff')
+          this.setData({
+            swiperArr: arr
+          })
+        })
+        .catch(console.error);
+
     },
     tel(){
         wx.makePhoneCall({

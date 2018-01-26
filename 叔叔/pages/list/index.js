@@ -1,11 +1,12 @@
 // pages/list/index.js
+const AV = require('../../utils/av-weapp-min.js');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    listArr:[]
   },
 
   /**
@@ -25,8 +26,25 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-  
+  onShow() {
+    new AV.Query('Todo')
+      .descending('createdAt')
+      .find()
+      .then(todos => {
+        console.log(todos[0])
+        let arr = [];
+        // this.setData({ listArr: todos })
+        todos.forEach((item) => {
+          arr.push({
+            img: item.attributes.img.attributes.url,
+            content: item.attributes.content
+          })
+        })
+        this.setData({
+          listArr: arr
+        })
+      })
+      .catch(console.error);
   },
 
   /**

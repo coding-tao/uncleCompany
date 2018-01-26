@@ -1,27 +1,7 @@
 <!--pages/list/index.wxml-->
     <view class='center-wrap'>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.jpg'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
+        <view class='center-list' wx:for="{{listArr}}"  wx:key="{{item}}">
+            <image src="{{item.img}}"></image>
+            <view>{{item.content}}</view>
         </view>        
     </view>

@@ -2,10 +2,12 @@
 <view class="container">
      <view class='header'>康晶达光电技术有限公司</view> 
     <swiper indicator-dots="{{indicatorDots}}"
+        indicator-color="rgba(255,255,255,0.6)"
+      indicator-active-color="#fff"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{swiperArr}}">
             <swiper-item>
-              <image src="{{item}}" class="slide-image" width="355" height="150"/>
+              <image src="{{item.img}}" mode='aspectFill' class="slide-image" width="355" height="150"/>
             </swiper-item>
         </block>
     </swiper>
@@ -35,30 +37,10 @@
     </view>
     <view class='header-nav center'>产品中心</view>
     <view class='center-wrap'>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.jpg'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>
-        <view class='center-list'>
-            <image src='../../images/demo1.png'></image>
-            <view>8.4寸 液晶显示屏</view>
-        </view>        
+        <view class='center-list' wx:for="{{listArr}}" wx:if="{{index<=9}}"  wx:key="{{item}}">
+            <image src="{{item.img}}"></image>
+            <view>{{item.content}}</view>
+        </view>    
     </view>
     <view class='header-nav center'>关于我们</view>
     <view class='about-wrap'>

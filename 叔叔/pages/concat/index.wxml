@@ -5,8 +5,12 @@
         <view class='content'><text selectable>深圳市宝安新中心区华美居商务中心大厦A区</text></view>
     </view>
     <view class='concat-list'>
-        <view class='name'>官网:</view>
+        <view class='name'>官网1:</view>
         <view class='content'><text selectable>HTTP://WWW.KOD-LCD.COM.CN</text></view>
+    </view>
+    <view class='concat-list'>
+        <view class='name'>官网2:</view>
+        <view class='content'><text selectable>www.kjd-lcd.com</text></view>
     </view>
     <view class='concat-list'>
         <view class='name'>座机:</view>
